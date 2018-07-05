@@ -1,2 +1,2 @@
-# garage
-this is a garage for various code
+# Staging
+This is a garage for staging various code
