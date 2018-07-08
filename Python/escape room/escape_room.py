@@ -470,6 +470,8 @@ With one final strike, what little is left of the door finally crumbles before y
             elif inv_choice == 'axe' and use_choice in room_look:
               print ' '
               room_look.remove(use_choice)
+              if use_choice in inventory:
+                inventory.remove(use_choice)
               removed_objects_list.append(use_choice)
               print 'You have successfully...destroyed the ' + use_choice
               print ' '
