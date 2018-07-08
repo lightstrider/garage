@@ -15,9 +15,8 @@ import pandas as pd
 
 #-----------------------------------
 
-
+message = 'Base Inputs Loaded'
+print message
 #-------------------------------------
 # End of Base Inputs
 #-------------------------------------
-message = 'Base Inputs Loaded'
-print message
