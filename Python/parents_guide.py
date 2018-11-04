@@ -4,8 +4,8 @@ movies = []
 go = True
 count = 0
 while go:
-  movie_name = raw_input("What movie? Say 'stop' to stop")
-  if ((count == 5)|(movie_name == "stop")):
+  movie_name = raw_input("What movie? Say 's' to stop")
+  if ((count == 5)|(movie_name == "s")):
     go = False
   else:
     movies.append(movie_name)
