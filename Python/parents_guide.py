@@ -1,15 +1,17 @@
-rt = False #do you want to see the rotten tomatoes as well?
+rt = True #do you want to see the rotten tomatoes as well?
 import webbrowser
 movies = []
 go = True
 count = 0
 while go:
   movie_name = raw_input("What movie? Say 's' to stop")
-  if ((count == 5)|(movie_name == "s")):
+  if (movie_name == "s"):
     go = False
   else:
     movies.append(movie_name)
     count+=1
+  if count ==6:
+    go = False
 for i in movies:
   adjusted_name=i.replace(" ","%20")
   parents_link = 'http://www.google.com/search?safe=strict&hl=en&q=imdb%20parents%20guide%20{}&btnI'.format(adjusted_name)
