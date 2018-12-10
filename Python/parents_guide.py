@@ -1,4 +1,4 @@
-rt = False #do you want to see the rotten tomatoes as well?
+rt = True #do you want to see the rotten tomatoes as well?
 import webbrowser
 movies = []
 go = True
@@ -10,7 +10,7 @@ while go:
   else:
     movies.append(movie_name)
     count+=1
-  if count ==20:
+  if count ==10:
     go = False
 for i in movies:
   adjusted_name=i.replace(" ","%20")
