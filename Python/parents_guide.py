@@ -4,7 +4,7 @@ movies = []
 go = True
 count = 0
 while go:
-  movie_name = raw_input("What movie? Say 's' to stop")
+  movie_name = input("What movie? Say 's' to stop")
   if (movie_name == "s"):
     go = False
   else:
